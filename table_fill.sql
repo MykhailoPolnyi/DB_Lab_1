@@ -1,0 +1,40 @@
+INSERT INTO `polnyi_db`.`loader` (`name`, `surname`, `mobile_phone`) VALUES ('Peter', 'Menson', '0112345678');
+INSERT INTO `polnyi_db`.`loader` (`name`, `surname`, `mobile_phone`, `company`) VALUES ('Kayleigh ', 'Peterson', '0998876543', 'Reload Inc.');
+INSERT INTO `polnyi_db`.`loader` (`name`, `surname`, `company`) VALUES ('Daisy', 'Smith', 'Florida Loaders Association');
+INSERT INTO `polnyi_db`.`loader` (`name`, `surname`, `mobile_phone`, `company`) VALUES ('Abraham ', 'Morrison', '0192837465', 'Patient Loader Inc.');
+INSERT INTO `polnyi_db`.`loader` (`name`, `surname`, `mobile_phone`) VALUES ('Hussain', 'Jones', '0666748952');
+INSERT INTO `polnyi_db`.`loader` (`name`, `surname`, `mobile_phone`) VALUES ('John', 'Bourne', '0995643871');
+INSERT INTO `polnyi_db`.`loader` (`name`, `surname`, `mobile_phone`, `company`) VALUES ('Shaun', 'Wallace', '0559782310', 'Reload Inc.');
+
+INSERT INTO `polnyi_db`.`snack` (`trademark`, `snack_type`, `price`) VALUES (' Reese’s Peanut Butter Cups', 'Chocolate Cookie', '500');
+INSERT INTO `polnyi_db`.`snack` (`trademark`, `snack_type`, `price`) VALUES ('Milky Way', 'Chocolate Bar', '750');
+INSERT INTO `polnyi_db`.`snack` (`trademark`, `snack_type`, `price`) VALUES ('Twix', 'Chocolate Bar', '400');
+INSERT INTO `polnyi_db`.`snack` (`trademark`, `snack_type`, `price`) VALUES ('M&M', 'Peanuts', '900');
+INSERT INTO `polnyi_db`.`snack` (`trademark`, `snack_type`, `price`) VALUES ('Bugles', 'Chips', '1500');
+INSERT INTO `polnyi_db`.`snack` (`trademark`, `snack_type`, `price`) VALUES ('Welch’s Fruit Snacks', 'Fruits', '1700');
+INSERT INTO `polnyi_db`.`snack` (`trademark`, `snack_type`, `price`) VALUES ('Funyuns', 'Chips', '1100');
+INSERT INTO `polnyi_db`.`snack` (`trademark`, `snack_type`, `price`) VALUES ('Take 5', 'Chocolate Bar', '800');
+INSERT INTO `polnyi_db`.`snack` (`trademark`, `snack_type`, `price`) VALUES ('Snickers', 'Chocolate Bar', '1000');
+INSERT INTO `polnyi_db`.`snack` (`trademark`, `snack_type`, `price`) VALUES ('Pringles BBQ', 'Chips', '2000');
+
+INSERT INTO `polnyi_db`.`snack_machine` (`adress`, `last_load`, `loader_id`, `last_cash_gathering`, `gathered_cash`, `coins_load_date`, `loaded_coins_sum`) VALUES ('2387 Garfield Road, Peoria, Illinois', '2021-09-18', '6', '2021-09-25', '30000', '2021-09-25', '10000');
+INSERT INTO `polnyi_db`.`snack_machine` (`adress`, `last_load`, `loader_id`, `last_cash_gathering`, `gathered_cash`, `coins_load_date`, `loaded_coins_sum`) VALUES ('2751 Benson Park Drive, LAS VEGAS, Nevada', '2021-09-10', '1', '2021-09-15', '10000', '2021-08-15', '1000');
+INSERT INTO `polnyi_db`.`snack_machine` (`adress`, `last_load`, `loader_id`, `last_cash_gathering`, `gathered_cash`, `coins_load_date`, `loaded_coins_sum`) VALUES ('Berkenlaan 128, Hardenberg, Overijssel', '2021-09-20', '7', '2021-09-20', '20000', '2021-09-21', '7000');
+INSERT INTO `polnyi_db`.`snack_machine` (`adress`, `last_load`, `loader_id`, `last_cash_gathering`, `gathered_cash`, `coins_load_date`, `loaded_coins_sum`) VALUES ('4932 Hershell Hollow Road, Blountville, Tennessee', '2021-09-15', '9', '2021-09-20', '15000', '2021-09-20', '5000');
+INSERT INTO `polnyi_db`.`snack_machine` (`adress`, `last_load`, `loader_id`, `coins_load_date`, `loaded_coins_sum`) VALUES ('Leeuwerik 166, Berkel en Rodenrijs, Zuid-Holland', '2021-09-29', '8', '2021-09-28', '5000');
+INSERT INTO `polnyi_db`.`snack_machine` (`adress`, `last_load`, `loader_id`, `last_cash_gathering`, `gathered_cash`, `coins_load_date`, `loaded_coins_sum`) VALUES ('2065 Meadow Lane, San Francisco, California', '2021-07-15', '3', '2021-08-10', '5000', '2021-06-10', '5000');
+INSERT INTO `polnyi_db`.`snack_machine` (`adress`, `last_load`, `loader_id`, `last_cash_gathering`, `gathered_cash`, `coins_load_date`, `loaded_coins_sum`) VALUES ('1083 Rivendell Drive, Akron, Ohio', '2021-09-17', '4', '2021-09-25', '23500', '2021-09-20', '5000');
+INSERT INTO `polnyi_db`.`snack_machine` (`adress`, `last_load`, `loader_id`, `last_cash_gathering`, `gathered_cash`, `coins_load_date`, `loaded_coins_sum`) VALUES ('Heaven Street, Garden City', '2021-09-10', '1', '2021-09-15', '15070', '2021-09-20', '8000');
+INSERT INTO `polnyi_db`.`snack_machine` (`adress`, `last_load`, `loader_id`, `last_cash_gathering`, `gathered_cash`, `coins_load_date`, `loaded_coins_sum`) VALUES ('2962 Rockford Road, CUSTER CITY, Oklahoma', '2021-09-23', '2', '2021-09-25', '60000', '2021-09-26', '15000');
+INSERT INTO `polnyi_db`.`snack_machine` (`adress`, `last_load`, `loader_id`, `last_cash_gathering`, `gathered_cash`, `coins_load_date`, `loaded_coins_sum`) VALUES ('3685 Daylene Drive, Southfield, Michigan', '2021-09-29', '5', '2021-09-20', '40000', '2021-09-29', '10000');
+
+INSERT INTO `polnyi_db`.`snack_machine_has_snack` (`snack_machine_id`, `snack_id`, `snack_amount`, `saled_snacks`, `loaded_snacks`) VALUES ('25', '8', '10', '3', '8');
+INSERT INTO `polnyi_db`.`snack_machine_has_snack` (`snack_machine_id`, `snack_id`, `snack_amount`, `saled_snacks`, `loaded_snacks`) VALUES ('25', '6', '11', '6', '10');
+INSERT INTO `polnyi_db`.`snack_machine_has_snack` (`snack_machine_id`, `snack_id`, `snack_amount`, `saled_snacks`, `loaded_snacks`) VALUES ('25', '7', '3', '3', '5');
+INSERT INTO `polnyi_db`.`snack_machine_has_snack` (`snack_machine_id`, `snack_id`, `snack_amount`, `saled_snacks`, `loaded_snacks`) VALUES ('29', '10', '6', '4', '10');
+INSERT INTO `polnyi_db`.`snack_machine_has_snack` (`snack_machine_id`, `snack_id`, `snack_amount`, `saled_snacks`, `loaded_snacks`) VALUES ('29', '2', '8', '1', '15');
+INSERT INTO `polnyi_db`.`snack_machine_has_snack` (`snack_machine_id`, `snack_id`, `snack_amount`, `saled_snacks`, `loaded_snacks`) VALUES ('33', '3', '10', '5', '15');
+INSERT INTO `polnyi_db`.`snack_machine_has_snack` (`snack_machine_id`, `snack_id`, `snack_amount`, `saled_snacks`, `loaded_snacks`) VALUES ('33', '6', '9', '4', '15');
+INSERT INTO `polnyi_db`.`snack_machine_has_snack` (`snack_machine_id`, `snack_id`, `snack_amount`, `saled_snacks`, `loaded_snacks`) VALUES ('30', '1', '8', '3', '10');
+INSERT INTO `polnyi_db`.`snack_machine_has_snack` (`snack_machine_id`, `snack_id`, `snack_amount`, `saled_snacks`, `loaded_snacks`) VALUES ('28', '10', '5', '2', '15');
+INSERT INTO `polnyi_db`.`snack_machine_has_snack` (`snack_machine_id`, `snack_id`, `snack_amount`, `saled_snacks`, `loaded_snacks`) VALUES ('28', '9', '1', '3', '10');
