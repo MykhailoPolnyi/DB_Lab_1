@@ -26,13 +26,24 @@ CREATE TABLE IF NOT EXISTS `Polnyi_DB`.`loader` (
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
+-- -----------------------------------------------------
+-- Table `Polnyi_DB`.`adress`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Polnyi_DB`.`adress` (
+  `id` INT NOT NULL,
+  `country` VARCHAR(15) NULL,
+  `city` VARCHAR(20) NULL,
+  `street` VARCHAR(20) NULL,
+  `house_number` VARCHAR(5) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
 
 -- -----------------------------------------------------
 -- Table `Polnyi_DB`.`snack_machine`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Polnyi_DB`.`snack_machine` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `adress` VARCHAR(50) NULL,
+  `adress_id` INT NULL,
   `last_load` DATE NULL,
   `loader_id` INT NULL,
   `last_cash_gathering` DATE NULL,
@@ -44,8 +55,13 @@ CREATE TABLE IF NOT EXISTS `Polnyi_DB`.`snack_machine` (
   CONSTRAINT `fk_snack_machine_loader`
     FOREIGN KEY (`loader_id`)
     REFERENCES `Polnyi_DB`.`loader` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+    ON DELETE SET NULL
+    ON UPDATE CASCADE)
+  CONSTRAINT `fk_snack_machine_adress1`
+    FOREIGN KEY (`adress_id`)
+    REFERENCES `Polnyi_DB`.`adress` (`id`)
+    ON DELETE SET NULL
+    ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
 
