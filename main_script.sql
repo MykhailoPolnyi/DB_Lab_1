@@ -30,7 +30,7 @@ ENGINE = InnoDB;
 -- Table `Polnyi_DB`.`adress`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Polnyi_DB`.`adress` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `country` VARCHAR(15) NULL,
   `city` VARCHAR(20) NULL,
   `street` VARCHAR(20) NULL,
