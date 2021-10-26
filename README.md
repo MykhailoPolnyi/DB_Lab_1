@@ -10,4 +10,8 @@
 
 ## My Task:
 
- $ Variant 41: **snack-automates**.
+```
+
+ Variant 41: **snack-automates**.
+
+```
